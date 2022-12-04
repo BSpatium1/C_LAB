@@ -1,4 +1,4 @@
-//#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 #define long 60
@@ -7,8 +7,7 @@
 
 
 int main(){
-    //printf("Enter value:");
-char enterValue[61];
+char enterValue[10000];
     scanf("%s", enterValue);
     unsigned int i = 0;
     unsigned int a = 0;
@@ -17,18 +16,18 @@ char enterValue[61];
 
 
   char people_Name[count_Of_People][long] = {
-         "Ivanov Ivan Ivanovich, +7 (981)-888-33-22." ,
-         "Kirillov Anton Efimovich, +7 (999)-888-11-00.",
-         "Afanasieva Olga, +7 (981)-345-11-22.",
-         "Lermontov Mikhail Yurievich, 8 (900)-876-54-31.",
-         "Pushkin Alexander Sergeevich, +7 (111)-987-65-21.",
-         "Fet Afanasy Afanasyevich, 8 (000)-234-54-34.",
-         "Euclid, +7 (123)-456-78-99.",
-         "Rob Pike, 8 (911)-742-79-04.",
-         "Eugen Vlasoff, 8 (999)-345-34-65.",
-         "Petr Petrovich Gas, 8 (992)-454-34-54.",
-         "Nil Armstrong, 8 (947)-756-56-98.",
-         "Alex White Hope, 8 (993)-947-37-84.",
+         "Ivanov Ivan Ivanovich, +7 (981) 888-33-22." ,
+         "Kirillov Anton Efimovich, +7 (999) 888-11-00.",
+         "Afanasieva Olga, +7 (981) 345-11-22.",
+         "Lermontov Mikhail Yurievich, 8 (900) 876-54-31.",
+         "Pushkin Alexander Sergeevich, +7 (111) 987-65-21.",
+         "Fet Afanasy Afanasyevich, 8 (000) 234-54-34.",
+         "Euclid, +7 (123) 456-78-99.",
+         "Rob Pike, 8 (911) 742-79-04.",
+         "Eugen Vlasoff, 8 (999) 345-34-65.",
+         "Petr Petrovich Gas, 8 (992) 454-34-54.",
+         "Nil Armstrong, 8 (947) 756-56-98.",
+         "Alex White Hope, 8 (993) 947-37-84.",
 
         };
     char people_Number[count_Of_People][long] = {
@@ -66,8 +65,8 @@ char enterValue[61];
 
     }
 
-    if(a == 0 && k == 0){
-        printf("not found\n");
+    if(a == 0 && k == 0 || strlen(enterValue) > 100) {
+        printf("Not found.\n");
     }
 
 

@@ -4,6 +4,6 @@ project(Hello_C C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Hello_C
-        lab1.c
-        "AIP.c"
-        t2.c)
+
+        "lab2.2.c"
+        )

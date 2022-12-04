@@ -1,18 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
-
+int my_pow(int);
 int main (){
-    short x = 10;
-    while(x == 0) {
+    short b[2];
+    long long size_byte1 = (long long) &b[1] - (long long) &b[0];
+    int a = size_byte1 * 8 -1;
+    long long max1 = (long long) my_pow(a) - 1;
+    long long min1 = -1 * max1 -1;
 
-        printf("%d,\n",x);
-        x++;
-
+    while(min1 != max1){
+        printf("%lld,",min1);
+        min1++ ;
     }
-
-    printf("32767\n");
-
-
-
-
+    printf("%lld\n",max1);
     return 0;
+}
+int my_pow(int y)
+{   int result = 2;
+    for(int i = 1; i < y; i++) {
+        result *= 2;
+    } return result;
 }
