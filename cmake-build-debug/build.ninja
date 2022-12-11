@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/artemgolev/Documents/Hello_C/cmake-build-debug/
 
 build cmake_object_order_depends_target_Hello_C: phony || CMakeFiles/Hello_C.dir
 
-build CMakeFiles/Hello_C.dir/lab2.2.c.o: C_COMPILER__Hello_C_Debug /Users/artemgolev/Documents/Hello_C/lab2.2.c || cmake_object_order_depends_target_Hello_C
-  DEP_FILE = CMakeFiles/Hello_C.dir/lab2.2.c.o.d
+build CMakeFiles/Hello_C.dir/lab2.5.c.o: C_COMPILER__Hello_C_Debug /Users/artemgolev/Documents/Hello_C/lab2.5.c || cmake_object_order_depends_target_Hello_C
+  DEP_FILE = CMakeFiles/Hello_C.dir/lab2.5.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5 -std=gnu11
   OBJECT_DIR = CMakeFiles/Hello_C.dir
   OBJECT_FILE_DIR = CMakeFiles/Hello_C.dir
@@ -60,7 +60,7 @@ build CMakeFiles/Hello_C.dir/lab2.2.c.o: C_COMPILER__Hello_C_Debug /Users/artemg
 #############################################
 # Link the executable Hello_C
 
-build Hello_C: C_EXECUTABLE_LINKER__Hello_C_Debug CMakeFiles/Hello_C.dir/lab2.2.c.o
+build Hello_C: C_EXECUTABLE_LINKER__Hello_C_Debug CMakeFiles/Hello_C.dir/lab2.5.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5
   OBJECT_DIR = CMakeFiles/Hello_C.dir
   POST_BUILD = :

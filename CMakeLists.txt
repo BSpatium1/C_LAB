@@ -5,5 +5,5 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Hello_C
 
-        "lab2.2.c"
+        "lab2.5.c"
         )
